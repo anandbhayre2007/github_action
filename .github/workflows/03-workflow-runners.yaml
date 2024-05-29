@@ -21,6 +21,7 @@ jobs:
               shell: bash 
               run: |
                echo "This job is running on a Windows runner." 
+               echo $RUNNER_OS
                
     mac-echo:
         runs-on: mac-latest
@@ -28,3 +29,4 @@ jobs:
             - name: Show OS
               run: |
                echo "This job is running on a Windows runner."
+               echo $RUNNER_OS
