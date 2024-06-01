@@ -1,1 +1,1 @@
-# adding text to verify the activity types
+# adding text to verify the different activity types
