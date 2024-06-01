@@ -11,5 +11,5 @@ jobs:
     filter-types-2-echo:
         runs-on: ubuntu-latest
         steps:
-            - name: print message
-              run: "Running whenever a PR is closed"
+         - name: print message
+           run: "Running whenever a PR is closed"
