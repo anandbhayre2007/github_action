@@ -25,7 +25,8 @@ jobs:
                 echo "workflow variable: ${{env.WORKFLOW_VAR}}"
                 echo "job variable: ${{env.JOB_VARIABLE}}"    
                 echo "step variable: ${{env.STEP_VARIABLE}}"   
-                echo "overwritten variable: ${{env.OVERWRITTEN}}"   
+                echo "overwritten variable: ${{env.OVERWRITTEN}}"  
+                echo "print overwritten data $STEP_VARIABLE"    
 
             #- name: test overwritten data
              # run: |
