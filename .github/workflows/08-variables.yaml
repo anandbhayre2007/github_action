@@ -28,6 +28,36 @@ jobs:
                 echo "overwritten variable: ${{env.OVERWRITTEN}}"  
                 echo "print overwritten data $STEP_VARIABLE"    
 
+
+    echo-repository-variable:
+        runs-on: ubuntu-latest
+        steps:             
+            - name: print repository variables
+              run: |
+                  echo "Repository variable: ${{vars.MY_REPOSITORY_VAR}}"
+                  echo "Repository overwritten variable: ${{vars.OVERWRITTEN_VAR_EX}}"   
+                  
+           
+           
+    echo-prod-environment-variable:
+        runs-on: ubuntu-latest
+        environment: Prod
+        steps:                
+            - name: print prod environment variables 
+              run: |
+                echo "Repository variable: ${{vars.TARGET_ENV}}"
+                echo "Repository overwritten variable: ${{vars.OVERWRITTEN_VAR_EX}}"  
+
+    echo-stg-environment-variable:
+        runs-on: ubuntu-latest
+        environment: Staging
+        steps:                
+            - name: print prod environment variables 
+              run: |
+                echo "Repository variable: ${{vars.TARGET_ENV}}"
+                echo "Repository overwritten variable: ${{vars.OVERWRITTEN_VAR_EX}}"                 
+                      
+
             #- name: test overwritten data
              # run: |
               #  echo "print overwritten data $STEP_VARIABLE"      
