@@ -52,7 +52,7 @@ jobs:
         runs-on: ubuntu-latest
         environment: Staging
         steps:                
-            - name: print prod environment variables 
+            - name: print staging environment variables 
               run: |
                 echo "Environment variable: ${{vars.TARGET_ENV}}"
                 echo "Environment overwritten variable: ${{vars.OVERWRITTEN_VAR_EX}}"
