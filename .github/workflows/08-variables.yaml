@@ -54,8 +54,9 @@ jobs:
         steps:                
             - name: print prod environment variables 
               run: |
-                echo "Repository variable: ${{vars.TARGET_ENV}}"
-                echo "Repository overwritten variable: ${{vars.OVERWRITTEN_VAR_EX}}"                 
+                echo "Environment variable: ${{vars.TARGET_ENV}}"
+                echo "Environment overwritten variable: ${{vars.OVERWRITTEN_VAR_EX}}"
+                echo "Undefined variable: ${{vars.Random || 'There no random variable'}}"                   
                       
 
             #- name: test overwritten data
