@@ -1,7 +1,7 @@
 name: 09 - Using Functions
 
 on:
-    push:
+    pull_request:
     workflow_dispatch:
             
 
@@ -12,7 +12,7 @@ jobs:
 
        - name: Sleep for 20 seconds
          run: sleep 20
-           
+
        - name: Failing step
          run: exit 1 
 
